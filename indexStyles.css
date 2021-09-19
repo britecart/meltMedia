@@ -1,0 +1,287 @@
+/*Created by Brittany Carter*/
+@font-face {
+  font-family: 'Adelle Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Adelle Light'), url('Adelle_light.woff') format('woff');
+}
+@font-face {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Helvetica'), url('HelveticaLt.ttf') format('ttf');
+}
+html, body {
+  margin: 0;
+}
+header {
+  background-image: url(bg1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+.bglayer {
+  background-color: rgba(137, 184, 234, 0.79);
+}
+nav, h1 {
+  font-family: Adelle Light;
+}
+.navbar-dark a {
+  color: #ffffff !important;
+  font-weight: 100;
+}
+.active a {
+  border-bottom: 2px solid #000000;
+  padding-bottom: 0;
+}
+.active > a {
+  pointer-events: none;
+  cursor: default;
+}
+nav li a:hover {
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 0;
+}
+p {
+  font-family: Helvetica;
+  font-size: 20px;
+  line-height: 34px;
+}
+.hero {
+  padding: 5%;
+}
+.ipad {
+  width: 75%;
+}
+.iphone {
+  margin-top: -80%;
+  margin-left: 40%;
+}
+.btn {
+  border-radius: 0;
+}
+.whatWeDo {
+  text-align: center;
+}
+.whatWeDo h1, .contact h1 {
+  color: #89b8ea;
+}
+.whatWeDo .icons {
+  width: 50%;
+}
+.whatWeDo p {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.careers {
+  background-image: url(bg2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+.bglayer2 {
+  background-color: rgba(70, 70, 70, 0.82);
+}
+.video {
+  margin-left: 15%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 75%;
+}
+.map {
+  background-image: url(map.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+.map .bg-dark {
+  background-color: rgba(72, 72, 72, 0.79) !important;
+}
+.map h2, .map dd, .map dt {
+  padding-left: 5%;
+}
+.map img {
+  padding-top: 3%;
+  padding-bottom: 5%;
+}
+.bglayer2, .map {
+  padding: 5%;
+}
+.contact {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  color: #2f3033;
+}
+.contact h1 {
+  text-align: center;
+}
+.contact fieldset {
+  border: 0;
+}
+form input, form textarea {
+  margin-top: 2.2%;
+  border: 1px solid #b3b3b3;
+}
+#name, #email, #subject {
+  height: 38px;
+  padding: 2%;
+}
+form textarea {
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  height: 150px;
+}
+#name, #email {
+  width: 48%;
+}
+#email {
+  margin-left: 3%;
+}
+#subject, #message {
+  width: 99.6%;
+}
+input:focus, #message:focus {
+  outline-width: 2px;
+  outline-style: solid;
+}
+#submitBtn {
+  padding-top: 1%;
+  padding-right: 2%;
+  padding-left: 2%;
+  padding-bottom: 1%;
+  background: #ffff;
+  color: #4b4a48;
+  margin-left: 45%;
+}
+footer {
+  text-align: center;
+  padding-bottom: 2%;
+  padding-top: 1%;
+  padding-left: 15%;
+  background-color: #89b8ea;
+}
+/*Small devices*/
+@media screen and (min-width:200px) and (max-width: 767.98px) {
+  h1, h2 {
+    font-size: 17px;
+  }
+  p, dd, dt {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .hero {
+    text-align: left;
+    padding-top: 3%;
+    padding-right: 7.5%;
+    padding-left: 3%;
+    padding-bottom: 3%;
+    margin: 3%;
+  }
+  br {
+    display: none;
+  }
+  .device {
+    padding-top: 6%;
+  }
+  .iphone {
+    width: 40%;
+  }
+  .whatWeDo h1, .whatWeDo p {
+    text-align: left;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .whatWeDo .icons {
+    width: 80%;
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .bglayer2 {
+    padding: 0;
+  }
+  .careers h1, .careers .btn {
+    padding-left: 1%;
+  }
+  .video {
+    padding-left: 0;
+    width: 100%;
+    margin: 0;
+  }
+  .map {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #name, #email {
+    width: 100%;
+  }
+  #email {
+    margin-left: 0;
+  }
+  .bglayer2 {
+    padding-top: 10%;
+    padding-right: 2%;
+    padding-left: 2%;
+    padding-bottom: 10%;
+  }
+  .contact h1 {
+    text-align: left;
+    padding-left: 2%;
+  }
+  .contact form, .contact p {
+    padding-top: 1%;
+    padding-right: 2%;
+    padding-left: 2%;
+    padding-bottom: 1%;
+  }
+  #submitBtn {
+    margin-left: 0%;
+    width: 100%;
+  }
+  footer {
+    text-align: left;
+    padding-left: 2%;
+  }
+}
+/*Medium devices */
+@media screen and (min-width:768px) and (max-width: 991.98px) {
+  h1, h2 {
+    font-size: 18px;
+  }
+  p, dd, dt {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  header {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  .iphone {
+    width: 40%;
+  }
+  .careers h1, .careers .btn {
+    padding-left: 1%;
+  }
+  .video {
+    padding-left: 0;
+    width: 100%;
+    margin: 0;
+  }
+  dt {
+    padding: 1%;
+  }
+  .contact {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+  .contact h1 {
+    padding-top: 5%;
+  }
+  #submitBtn {
+    margin-left: 40%;
+  }
+  footer {
+    padding-left: 0;
+  }
+}
